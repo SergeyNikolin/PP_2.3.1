@@ -20,6 +20,9 @@ public class CarsController {
         cars.add(new Car("Audi", "Red", 3));
         cars.add(new Car("Toyota", "Blue", 4));
         cars.add(new Car("Nissan", "Green", 5));
+        if (count < 0) {
+            count = 0;
+        }
         if(count > cars.size()) {
             count = cars.size();
         }
